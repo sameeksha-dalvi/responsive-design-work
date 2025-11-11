@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/roboto-variablefont_wdthwght-webfont.woff') format('woff'),
+        url('assets/fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
 :root{
     --header-bgm:#111827;
     --text:#F9FAFB;
@@ -5,8 +13,13 @@
     --btn-hover:#0D9488;
     --menu-bg:#1F2937;
     --bg:#D4D9E2;
+    
 }
 
+body{
+    font-family: Roboto;
+    margin: 0;
+}
 .icon{
     width: 1.5em;
     height: 1.5em;
@@ -29,12 +42,19 @@
     padding: 10px;
 }
 
+#brand-logo{
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
 .nav-links{
     display: flex;
     width: 800px;
     justify-content: space-evenly;
     gap: 20px;
     font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .nav-links > li{
