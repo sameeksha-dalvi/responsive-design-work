@@ -53,10 +53,28 @@ body{
     justify-content: space-evenly;
     gap: 20px;
     font-size: 16px;
-    font-weight: 600;
     letter-spacing: 1px;
 }
 
 .nav-links > li{
     list-style: none;
+}
+
+.nav-links > li:hover{
+    color: var(--btn-bg);
+}
+
+
+#sign-up-btn{
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--btn-bg);
+    border-radius:10px;
+    color: var(--text);
+    padding: 10px 25px;
+    border: none;
+}
+
+#sign-up-btn:hover{
+    background-color: var(--btn-hover);
 }
