@@ -19,3 +19,24 @@
 .menu-icons{
     display: none;
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-bgm);
+    color: var(--text);
+    padding: 10px;
+}
+
+.nav-links{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.nav-links > li{
+    list-style: none;
+}
