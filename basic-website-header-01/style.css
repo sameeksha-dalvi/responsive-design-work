@@ -86,7 +86,7 @@ body {
     list-style: none;
 }
 
-.nav-links>li,.menu-items > div > ul > li:hover {
+.nav-links>li:hover,.menu-items > div > ul > li:hover {
     color: var(--btn-bg);
 }
 
@@ -115,7 +115,7 @@ margin-right: 20px;
 }
 
 
-#sign-up-btn,.menu-items > div >button:hover {
+#sign-up-btn:hover,.menu-items > div >button:hover {
     background-color: var(--btn-hover);
 }
 
