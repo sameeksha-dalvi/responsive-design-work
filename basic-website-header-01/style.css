@@ -19,6 +19,7 @@
 body {
     font-family: Roboto;
     margin: 0;
+    background-color: var(--bg);
 }
 
 .icon {
@@ -28,6 +29,28 @@ body {
 
 .menu-items {
     display: none;
+    background-color: var(--menu-bg);
+    color: var(--text);
+    
+}
+
+.menu-items > div{
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    padding: 10px;
+}
+
+/* .menu-items > div >button{
+    margin-left: 20px;
+} */
+
+#close-icon {
+    display: none;
+    margin-right: 20px;
 }
 
 .menu-icons {
@@ -59,16 +82,24 @@ body {
     letter-spacing: 1px;
 }
 
-.nav-links>li {
+.nav-links>li,.menu-items > div > ul > li {
     list-style: none;
 }
 
-.nav-links>li:hover {
+.nav-links>li,.menu-items > div > ul > li:hover {
     color: var(--btn-bg);
 }
 
+.menu-items > div > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
-#sign-up-btn {
+#sign-up-btn,.menu-items > div >button {
     font-size: 17px;
     font-weight: 500;
     background-color: var(--btn-bg);
@@ -76,13 +107,25 @@ body {
     color: var(--text);
     padding: 10px 25px;
     border: none;
-    margin-right: 20px;
+    
 }
 
-#sign-up-btn:hover {
+#sign-up-btn{
+margin-right: 20px;
+}
+
+
+#sign-up-btn,.menu-items > div >button:hover {
     background-color: var(--btn-hover);
 }
 
+@media(min-width:600px) {
+    .menu-items {
+        display: none !important;
+    }
+
+    
+}
 
 @media(max-width:600px) {
     .nav-links {
@@ -102,17 +145,17 @@ body {
         margin-right: 20px;
     }
 
-    #close-icon{
+
+    #hamburger-icon:hover {
+        color: var(--btn-bg);
+    }
+
+    #close-icon:hover {
+        color: var(--btn-bg);
+    }
+
+    .menu-items {
         display: none;
-        margin-right: 20px;
-    }
-
-    #hamburger-icon:hover{
-        color: #14B8A6;
-    }
-
-    #close-icon:hover{
-        color: #14B8A6;
     }
 
 }
